@@ -506,14 +506,16 @@ export default function Home() {
         {/* Project Image */}
         <div className="relative aspect-[16/10] overflow-hidden bg-[#151515]">
 
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-7xl font-bold tracking-[-5px] text-[#F47B20]/20">
-              HN
-            </span>
-          </div>
+          <div className="absolute inset-0">
+  <img
+    src="/hydranexa-project.jpg"
+    alt="HydraNexa Hydropower Project"
+    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+  />
+</div>
 
           <div className="absolute left-5 top-5 border border-[#F47B20]/40 bg-[#090909]/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-[2px] text-[#F47B20]">
-            Featured
+             Web Application
           </div>
 
         </div>
@@ -565,14 +567,16 @@ export default function Home() {
           {/* Links */}
           <div className="mt-8 flex gap-5">
             <a
-              href="#"
+              href="https://hydra-nexas-hydropower.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-semibold text-[#F47B20] transition-colors hover:text-[#FF9638]"
             >
               Live Demo ↗
             </a>
 
             <a
-              href="#"
+              href="https://github.com/kishmi1/HydraNexas_Hydropower"
               className="text-sm font-semibold text-[#999] transition-colors hover:text-[#F5F5F0]"
             >
               GitHub ↗
@@ -582,87 +586,188 @@ export default function Home() {
         </div>
       </article>
 
-      {/* Project 02 — Donation Management */}
-      <article className="group overflow-hidden border border-[#252525] bg-[#111111] transition-all duration-300 hover:-translate-y-1 hover:border-[#F47B20]/50">
+    <article className="group overflow-hidden border border-[#252525] bg-[#111111] transition-all duration-300 hover:-translate-y-1 hover:border-[#F47B20]/50">
 
-        {/* Project Image */}
-        <div className="relative aspect-[16/10] overflow-hidden bg-[#151515]">
+  {/* Project Image */}
+  <div className="relative aspect-[16/10] overflow-hidden bg-[#151515]">
 
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-7xl font-bold tracking-[-5px] text-[#F47B20]/20">
-              DM
-            </span>
-          </div>
+    <div className="absolute inset-0">
+      <img
+        src="/pizza-ordering-project.jpg"
+        alt="Pizza Ordering System Project"
+        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+    </div>
 
-          <div className="absolute left-5 top-5 border border-[#2A2A2A] bg-[#090909]/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-[2px] text-[#999]">
-            Web Application
-          </div>
+    <div className="absolute left-5 top-5 border border-[#2A2A2A] bg-[#090909]/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-[2px] text-[#999]">
+      Web Application
+    </div>
 
-        </div>
+  </div>
 
-        {/* Content */}
-        <div className="p-7 md:p-8">
+  {/* Content */}
+  <div className="p-7 md:p-8">
 
-          <div className="mb-4 flex items-start justify-between gap-4">
-            <div>
-              <p className="mb-2 text-xs uppercase tracking-[2px] text-[#666]">
-                02 / Management System
-              </p>
+    <div className="mb-4 flex items-start justify-between gap-4">
+      <div>
 
-              <h3 className="text-2xl font-bold sm:text-3xl">
-                Donation Management System
-              </h3>
-            </div>
+        <p className="mb-2 text-xs uppercase tracking-[2px] text-[#666]">
+          02 / Ordering System
+        </p>
 
-            <span className="text-2xl text-[#F47B20]">
-              ↗
-            </span>
-          </div>
+        <h3 className="text-2xl font-bold sm:text-3xl">
+          Pizza Ordering System
+        </h3>
 
-          <p className="text-sm leading-7 text-[#888] sm:text-base">
-            A web-based donation platform designed to manage donors,
-            donations, causes and donation history through an organized
-            management system.
-          </p>
+      </div>
 
-          {/* Technologies */}
-          <div className="mt-6 flex flex-wrap gap-2">
-            {[
-              "PHP",
-              "MySQL",
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "Bootstrap",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="border border-[#2A2A2A] px-3 py-1.5 text-xs text-[#999]"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+      <span className="text-2xl text-[#F47B20]">
+        ↗
+      </span>
 
-          {/* Links */}
-          <div className="mt-8 flex gap-5">
-            <a
-              href="#"
-              className="text-sm font-semibold text-[#F47B20] transition-colors hover:text-[#FF9638]"
-            >
-              Live Demo ↗
-            </a>
+    </div>
 
-            <a
-              href="#"
-              className="text-sm font-semibold text-[#999] transition-colors hover:text-[#F5F5F0]"
-            >
-              GitHub ↗
-            </a>
-          </div>
+    <p className="text-sm leading-7 text-[#888] sm:text-base">
+      A web-based pizza ordering system designed to make food ordering
+      simple and convenient, with menu browsing, cart management and
+      order placement features.
+    </p>
 
-        </div>
-      </article>
+    {/* Technologies */}
+    <div className="mt-6 flex flex-wrap gap-2">
+      {[
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+      ].map((tech) => (
+        <span
+          key={tech}
+          className="border border-[#2A2A2A] px-3 py-1.5 text-xs text-[#999]"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+
+    {/* Links */}
+    <div className="mt-8 flex gap-5">
+
+      <a
+        href="https://drive.google.com/file/d/10YRVcwXj5oznPb58SzDqA9LAV99Id5Cu/view?usp=sharing"
+        className="text-sm font-semibold text-[#F47B20] transition-colors hover:text-[#FF9638]"
+      >
+        Live Demo ↗
+      </a>
+
+      <a
+        href="https://github.com/kishmi1/pizzaorderingphp"
+        className="text-sm font-semibold text-[#999] transition-colors hover:text-[#F5F5F0]"
+      >
+        GitHub ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</article>
+
+<article className="group overflow-hidden border border-[#252525] bg-[#111111] transition-all duration-300 hover:-translate-y-1 hover:border-[#F47B20]/50">
+
+  {/* Project Image */}
+  <div className="relative aspect-[16/10] overflow-hidden bg-[#151515]">
+
+    <div className="absolute inset-0">
+      <img
+        src="/donation-management-project.jpg"
+        alt="Donation Management System Project"
+        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+    </div>
+
+    <div className="absolute left-5 top-5 border border-[#2A2A2A] bg-[#090909]/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-[2px] text-[#999]">
+      Web Application
+    </div>
+
+  </div>
+
+  {/* Content */}
+  <div className="p-7 md:p-8">
+
+    <div className="mb-4 flex items-start justify-between gap-4">
+
+      <div>
+        <p className="mb-2 text-xs uppercase tracking-[2px] text-[#666]">
+          03 / Management System
+        </p>
+
+        <h3 className="text-2xl font-bold sm:text-3xl">
+          Donation Management System
+        </h3>
+      </div>
+
+      <span className="text-2xl text-[#F47B20]">
+        ↗
+      </span>
+
+    </div>
+
+    <p className="text-sm leading-7 text-[#888] sm:text-base">
+      A web-based donation management platform designed to manage
+      donors, donations, causes and donation history through an
+      organized and user-friendly system.
+    </p>
+
+    {/* Technologies */}
+    <div className="mt-6 flex flex-wrap gap-2">
+      {[
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+      ].map((tech) => (
+        <span
+          key={tech}
+          className="border border-[#2A2A2A] px-3 py-1.5 text-xs text-[#999]"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+
+    {/* Links */}
+
+<div className="mt-8 flex gap-5">
+ <a
+  href="/donation-demo.mp4"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm font-semibold text-[#F47B20] transition-colors hover:text-[#FF9638]"
+>
+  Demo Video ↗
+</a>
+
+
+      <a
+        href="https://github.com/kishmi1/organization"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm font-semibold text-[#999] transition-colors hover:text-[#F5F5F0]"
+      >
+        GitHub ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</article>
+
 
     </div>
 
