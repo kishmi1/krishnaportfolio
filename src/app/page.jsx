@@ -767,6 +767,94 @@ export default function Home() {
   </div>
 
 </article>
+{/* Project 02 — Cherdung Cafe */}
+<article className="group overflow-hidden border border-[#252525] bg-[#111111] transition-all duration-300 hover:-translate-y-1 hover:border-[#F47B20]/50">
+
+  {/* Project Image */}
+  <div className="relative aspect-[16/10] overflow-hidden bg-[#151515]">
+
+    <div className="absolute inset-0">
+      <img
+        src="/cherdung-cafe-project.jpg"
+        alt="Cherdung Cafe Website"
+        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+    </div>
+
+    <div className="absolute left-5 top-5 border border-[#F47B20]/40 bg-[#090909]/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-[2px] text-[#F47B20]">
+      Full-Stack Web Application
+    </div>
+
+  </div>
+
+  {/* Content */}
+  <div className="p-7 md:p-8">
+
+    <div className="mb-4 flex items-start justify-between gap-4">
+      <div>
+        <p className="mb-2 text-xs uppercase tracking-[2px] text-[#666]">
+          02 / Full-Stack Web Application
+        </p>
+
+        <h3 className="text-2xl font-bold sm:text-3xl">
+          Cherdung Cafe
+        </h3>
+      </div>
+
+      <span className="text-2xl text-[#F47B20]">
+        ↗
+      </span>
+    </div>
+
+    <p className="text-sm leading-7 text-[#888] sm:text-base">
+      A full-stack cafe website with online food ordering, table
+      reservations, menu management, offers, gallery, blog, enquiries
+      and an admin dashboard for managing dynamic content.
+    </p>
+
+    {/* Technologies */}
+    <div className="mt-6 flex flex-wrap gap-2">
+      {[
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS",
+        "Cloudinary",
+        "Vercel",
+      ].map((tech) => (
+        <span
+          key={tech}
+          className="border border-[#2A2A2A] px-3 py-1.5 text-xs text-[#999]"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+
+    {/* Links */}
+    <div className="mt-8 flex gap-5">
+      <a
+        href="https://cherdungcafe.vercel.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm font-semibold text-[#F47B20] transition-colors hover:text-[#FF9638]"
+      >
+        Live Demo ↗
+      </a>
+
+      <a
+        href="https://github.com/kishmi1/cherdungcafe"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm font-semibold text-[#999] transition-colors hover:text-[#F5F5F0]"
+      >
+        GitHub ↗
+      </a>
+    </div>
+
+  </div>
+</article>
 
 
     </div>
@@ -946,7 +1034,7 @@ export default function Home() {
               </p>
 
               <p className="mt-2 text-base text-[#DDD] transition-colors group-hover:text-[#F47B20]">
-                +977 9849988348
+                +977 9740715599
               </p>
             </div>
           </a>
